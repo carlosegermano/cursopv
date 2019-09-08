@@ -4,18 +4,25 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Entity
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
 public class Aluno implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	//@Id
-	//@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
 	private String matricula;
 	private String email;
 	private String cpf;
 	
+	@OneToMany(mappedBy="aluno")
 	private List<Endereco> enderecos = new ArrayList<>();
 
 	public Aluno() {}
