@@ -1,0 +1,5 @@
+package com.carloseduardo.cursopv.domain;
+
+public class Endereco {
+
+}
