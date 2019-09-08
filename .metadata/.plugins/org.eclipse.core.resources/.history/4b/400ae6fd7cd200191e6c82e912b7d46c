@@ -29,6 +29,7 @@ public class Aluno implements Serializable {
 	@OneToMany(mappedBy="aluno")
 	private List<Endereco> enderecos = new ArrayList<>();
 	
+	@OneToMany(mappedBy="aluno")
 	@ElementCollection
 	@CollectionTable(name="TELEFONE")
 	private Set<String> telefones = new HashSet<>();
@@ -90,14 +91,6 @@ public class Aluno implements Serializable {
 
 	public void setEnderecos(List<Endereco> enderecos) {
 		this.enderecos = enderecos;
-	}
-
-	public Set<String> getTelefones() {
-		return telefones;
-	}
-
-	public void setTelefones(Set<String> telefones) {
-		this.telefones = telefones;
 	}
 
 	@Override

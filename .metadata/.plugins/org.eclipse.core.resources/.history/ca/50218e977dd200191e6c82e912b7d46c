@@ -33,7 +33,7 @@ public class CursopvApplication implements CommandLineRunner {
 		Endereco end1 = new Endereco(null, "Rua Livroeira", "345", "Centro", "56485710", aluno1);
 		
 		aluno1.getEnderecos().addAll(Arrays.asList(end1));
-		aluno1.getTelefones().addAll(Arrays.asList("(83) 987575744", "(83) 998956985"));
+		aluno1.getTelefones().addAll(Arrays.asList("(83) 98757574", "(83) 998956985"));
 		
 		alunoRepository.saveAll(Arrays.asList(aluno1));
 		enderecoRepository.saveAll(Arrays.asList(end1));
