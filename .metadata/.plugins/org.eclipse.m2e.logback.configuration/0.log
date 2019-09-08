@@ -1939,3 +1939,73 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2019-09-08 16:55:31,006 [Worker-126: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-09-08 16:55:31,022 [Worker-126: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-09-08 16:55:31,022 [Worker-126: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 16:55:31,022 [Worker-126: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 16:55:31,022 [Worker-126: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:37:32,085 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:37:32,085 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:37:32,085 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:37:32,085 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:37:32,085 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:38:13,628 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:38:13,628 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:38:13,628 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:38:13,628 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:38:13,628 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:40:46,894 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:40:46,894 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:40:46,910 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:40:46,910 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:40:46,910 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:40:56,275 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:40:56,275 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:40:56,275 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:40:56,291 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:40:56,291 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:41:15,597 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:41:15,597 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:41:15,597 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:41:15,597 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:41:15,597 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:41:43,178 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:41:43,178 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:41:43,178 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:41:43,178 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:41:43,178 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:42:27,950 [Worker-142: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:42:27,950 [Worker-142: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:42:27,950 [Worker-142: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:42:27,950 [Worker-142: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:42:27,950 [Worker-142: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:43:27,104 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:43:27,104 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:43:27,104 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:43:27,104 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:43:27,104 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:43:56,328 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:43:56,328 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:43:56,328 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:43:56,328 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:43:56,328 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:44:00,920 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:44:00,920 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:44:00,920 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:44:00,920 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:44:00,920 [Worker-140: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:46:28,522 [Worker-137: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:46:28,522 [Worker-137: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:46:28,537 [Worker-137: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:46:28,537 [Worker-137: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:46:28,537 [Worker-137: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:48:04,716 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:48:04,731 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:48:04,731 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:48:04,731 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:48:04,731 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:50:16,313 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:50:16,313 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:50:16,313 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-08 17:50:16,328 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:50:16,328 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Eduardo\Documents\UFPB - SI\Projeto_Eagle\cursopv\src\test\resources
+2019-09-08 17:56:01,700 [Worker-144: Launching cursopv - CursopvApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-08 17:56:01,700 [Worker-144: Launching cursopv - CursopvApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-08 17:56:01,700 [Worker-144: Launching cursopv - CursopvApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

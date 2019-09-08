@@ -32,8 +32,6 @@ public class CursopvApplication implements CommandLineRunner {
 		
 		Endereco end1 = new Endereco(null, "Rua Livroeira", "345", "Centro", "56485710", aluno1);
 		
-		aluno1.getEnderecos().addAll(Arrays.asList(end1));
-		
 		alunoRepository.saveAll(Arrays.asList(aluno1));
 		enderecoRepository.saveAll(Arrays.asList(end1));
 		
