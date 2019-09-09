@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -32,16 +31,16 @@ public class Disciplina implements Serializable {
 	)
 	private List<Aluno> alunos = new ArrayList<>();
 	
-	@OneToOne(mappedBy="disciplina")
 	private Professor professor;
 
 	public Disciplina() {}
 	
-	public Disciplina(Integer id, String codigo, String nome) {
+	public Disciplina(Integer id, String codigo, String nome, Professor professor) {
 		super();
 		this.id = id;
 		this.codigo = codigo;
 		this.nome = nome;
+		this.setProfessor(professor);
 	}
 
 	public Integer getId() {
@@ -84,7 +83,7 @@ public class Disciplina implements Serializable {
 	public void setAlunos(List<Aluno> alunos) {
 		this.alunos = alunos;
 	}
-
+	
 	public Professor getProfessor() {
 		return professor;
 	}

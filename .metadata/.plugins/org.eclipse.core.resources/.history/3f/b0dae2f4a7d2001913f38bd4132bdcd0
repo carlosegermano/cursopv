@@ -32,7 +32,7 @@ public class Disciplina implements Serializable {
 	)
 	private List<Aluno> alunos = new ArrayList<>();
 	
-	@OneToOne(mappedBy="disciplina")
+	@OneToOne(mappedBy="professor")
 	private Professor professor;
 
 	public Disciplina() {}
@@ -85,6 +85,7 @@ public class Disciplina implements Serializable {
 		this.alunos = alunos;
 	}
 
+	@JsonIgnore
 	public Professor getProfessor() {
 		return professor;
 	}

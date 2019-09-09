@@ -1,0 +1,25 @@
+package com.carloseduardo.cursopv.domain;
+
+public class Professor {
+
+	private Integer id;
+	private String nome;
+	private String titulacao;
+	private String cpf;
+	
+	private Disciplina disciplina;
+
+	public Professor() {}
+	
+	public Professor(Integer id, String nome, String titulacao, String cpf, Disciplina disciplina) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.titulacao = titulacao;
+		this.cpf = cpf;
+		this.disciplina = disciplina;
+	}
+	
+	
+	
+}
