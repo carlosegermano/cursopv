@@ -8,10 +8,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.carloseduardo.cursopv.domain.Aluno;
+import com.carloseduardo.cursopv.domain.Desempenho;
 import com.carloseduardo.cursopv.domain.Disciplina;
 import com.carloseduardo.cursopv.domain.Endereco;
 import com.carloseduardo.cursopv.domain.Professor;
 import com.carloseduardo.cursopv.repositories.AlunoRepository;
+import com.carloseduardo.cursopv.repositories.DesempenhoRepository;
 import com.carloseduardo.cursopv.repositories.DisciplinaRepository;
 import com.carloseduardo.cursopv.repositories.EnderecoRepository;
 import com.carloseduardo.cursopv.repositories.ProfessorRepository;
@@ -30,7 +32,10 @@ public class CursopvApplication implements CommandLineRunner {
 	
 	@Autowired
 	private ProfessorRepository professorRepository;
-
+	
+	@Autowired
+	private DesempenhoRepository desempenhoRepository;
+	
 	public static void main(String[] args) {
 		SpringApplication.run(CursopvApplication.class, args);
 	}
@@ -52,15 +57,20 @@ public class CursopvApplication implements CommandLineRunner {
 		Disciplina disc2 = new Disciplina(null, "378486", "Matemática");
 
 		disc1.getAlunos().addAll(Arrays.asList(aluno1));
+		disc2.getAlunos().addAll(Arrays.asList(aluno1));
 		
 		aluno1.getDisciplinas().addAll(Arrays.asList(disc1, disc2));
-		
+				
 		disciplinaRepository.saveAll(Arrays.asList(disc1, disc2));
 		
 		Professor prof1 = new Professor(null, "João Rocha", "Graduação", "55658478545", disc1);
 		Professor prof2 = new Professor(null, "Leonardo França", "Mestre", "55458569856", disc2);
 
 		professorRepository.saveAll(Arrays.asList(prof1, prof2));
+		
+		Desempenho d1 = new Desempenho(null, 9.4, 7.8, 8.0, 10.0, 10.0, 9.5, 7.7, 8.5, 6.5, 10.0, 8.74, aluno1);
+		
+		desempenhoRepository.saveAll(Arrays.asList(d1));
 	}
 
 }

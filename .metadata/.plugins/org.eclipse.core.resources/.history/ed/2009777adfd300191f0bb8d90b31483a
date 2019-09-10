@@ -1,0 +1,21 @@
+package com.carloseduardo.cursopv.domain;
+
+public class Desempenho {
+
+	private Integer id;
+	private double linguaPortuguesa;
+	private double matematica;
+	private double historia;
+	private double geografia;
+	private double fisica;
+	private double quimica;
+	private double biologia;
+	private double sociologia;
+	private double filosofia;
+	private double linguaEspanhola;
+	private double mediaGeral;
+	
+	private Aluno aluno;
+	
+	
+}

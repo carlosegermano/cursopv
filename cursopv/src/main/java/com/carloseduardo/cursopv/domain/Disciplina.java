@@ -13,6 +13,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Disciplina implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -23,6 +25,7 @@ public class Disciplina implements Serializable {
 	private String codigo;
 	private String nome;
 	
+	@JsonIgnore
 	@ManyToMany
 	@JoinTable(name = "ALUNO_DISCIPLINA",
 			joinColumns = @JoinColumn(name = "disciplina_id"),
@@ -32,12 +35,6 @@ public class Disciplina implements Serializable {
 	
 	@OneToOne(mappedBy="disciplina")
 	private Professor professor;
-	
-	@ManyToMany
-	@JoinTable(name = "SIMULADO_DISCIPLINA",
-			joinColumns = @JoinColumn(name = "disciplina_id"),
-			inverseJoinColumns = @JoinColumn(name = "simulado_id"))
-	private List<Simulado> simulados = new ArrayList<>();
 	
 	public Disciplina() {}
 	
@@ -86,14 +83,6 @@ public class Disciplina implements Serializable {
 
 	public void setProfessor(Professor professor) {
 		this.professor = professor;
-	}
-
-	public List<Simulado> getSimulados() {
-		return simulados;
-	}
-
-	public void setSimulados(List<Simulado> simulados) {
-		this.simulados = simulados;
 	}
 	
 	@Override
