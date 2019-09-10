@@ -13,8 +13,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 @Entity
 public class Disciplina implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -34,7 +32,13 @@ public class Disciplina implements Serializable {
 	
 	@OneToOne(mappedBy="disciplina")
 	private Professor professor;
-
+	
+	@ManyToMany
+	@JoinTable(name = "SIMULADO_DISCIPLINA",
+			joinColumns = @JoinColumn(name = "disciplina_id"),
+			inverseJoinColumns = @JoinColumn(name = "simulado_id"))
+	private List<Simulado> simulados = new ArrayList<>();
+	
 	public Disciplina() {}
 	
 	public Disciplina(Integer id, String codigo, String nome) {
@@ -68,15 +72,6 @@ public class Disciplina implements Serializable {
 		this.nome = nome;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		return result;
-	}
-
-	@JsonIgnore
 	public List<Aluno> getAlunos() {
 		return alunos;
 	}
@@ -91,6 +86,22 @@ public class Disciplina implements Serializable {
 
 	public void setProfessor(Professor professor) {
 		this.professor = professor;
+	}
+
+	public List<Simulado> getSimulados() {
+		return simulados;
+	}
+
+	public void setSimulados(List<Simulado> simulados) {
+		this.simulados = simulados;
+	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
 	}
 
 	@Override
@@ -109,5 +120,5 @@ public class Disciplina implements Serializable {
 			return false;
 		return true;
 	}
-	
+
 }

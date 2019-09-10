@@ -1,0 +1,16 @@
+package com.carloseduardo.cursopv.domain;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Simulado {
+
+	private Integer id;
+	private Integer qtdQuestoes;
+	private Date data;
+	
+	private List<Disciplina> disciplinas = new ArrayList<>();
+	
+	
+}

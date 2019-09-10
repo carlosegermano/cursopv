@@ -30,7 +30,7 @@ public class CursopvApplication implements CommandLineRunner {
 	
 	@Autowired
 	private ProfessorRepository professorRepository;
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(CursopvApplication.class, args);
 	}
@@ -43,7 +43,6 @@ public class CursopvApplication implements CommandLineRunner {
 		Endereco end1 = new Endereco(null, "Rua Livroeira", "345", "Centro", "56485710", aluno1);		
 		
 		aluno1.getEnderecos().addAll(Arrays.asList(end1));
-		
 		aluno1.getTelefones().addAll(Arrays.asList("(83) 987575744", "(83) 998956985"));
 		
 		alunoRepository.saveAll(Arrays.asList(aluno1));
@@ -60,10 +59,7 @@ public class CursopvApplication implements CommandLineRunner {
 		
 		Professor prof1 = new Professor(null, "João Rocha", "Graduação", "55658478545", disc1);
 		Professor prof2 = new Professor(null, "Leonardo França", "Mestre", "55458569856", disc2);
-		
-		disc1.setProfessor(prof1);
-		disc2.setProfessor(prof2);
-		
+
 		professorRepository.saveAll(Arrays.asList(prof1, prof2));
 	}
 
