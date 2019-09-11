@@ -32,9 +32,8 @@ public class AlunoService {
 */
 	
 	public Aluno update(Aluno obj) {
-		Aluno newObj = find(obj.getId());
-		updateDate(newObj, obj);
-		return repo.save(newObj);
+		find(obj.getId());
+		return repo.save(obj);
 	}
 	
 	public void delete(Integer id) {
@@ -51,11 +50,6 @@ public class AlunoService {
 	}
 	
 	public Aluno fromDTO(AlunoDTO objDto) {
-		return new Aluno(objDto.getId(), objDto.getNome(), objDto.getMatricula(), objDto.getEmail(),null);
-	}
-	
-	private void updateDate(Aluno newObj, Aluno obj) {
-		newObj.setNome(obj.getNome());
-		newObj.setEmail(obj.getEmail());
+		throw new UnsupportedOperationException();
 	}
 }

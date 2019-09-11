@@ -4,11 +4,9 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import com.carloseduardo.cursopv.domain.Aluno;
-import com.carloseduardo.cursopv.dto.AlunoDTO;
 import com.carloseduardo.cursopv.repositories.AlunoRepository;
 import com.carloseduardo.cursopv.services.exception.ObjectNotFoundException;
 
@@ -29,33 +27,13 @@ public class AlunoService {
 		return repo.save(obj);
 	}
 	
-*/
-	
 	public Aluno update(Aluno obj) {
-		Aluno newObj = find(obj.getId());
-		updateDate(newObj, obj);
-		return repo.save(newObj);
+		find(obj.getId());
+		return repo.save(obj);
 	}
-	
-	public void delete(Integer id) {
-		find(id);
-		try {
-			repo.deleteById(id);
-		} catch (DataIntegrityViolationException e) {
-			throw new DataIntegrityViolationException("Não é possível excluir aluno sem excluir o endereço e seus telefones");
-		}
-	}
+*/
 	
 	public List<Aluno> findAll(){
 		return repo.findAll();
-	}
-	
-	public Aluno fromDTO(AlunoDTO objDto) {
-		return new Aluno(objDto.getId(), objDto.getNome(), objDto.getMatricula(), objDto.getEmail(),null);
-	}
-	
-	private void updateDate(Aluno newObj, Aluno obj) {
-		newObj.setNome(obj.getNome());
-		newObj.setEmail(obj.getEmail());
 	}
 }

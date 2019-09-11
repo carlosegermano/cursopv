@@ -1,24 +1,14 @@
 package com.carloseduardo.cursopv.dto;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
-
-import org.hibernate.validator.constraints.Length;
-
 import com.carloseduardo.cursopv.domain.Aluno;
 
 public class AlunoDTO {
 
 	private Integer id;
-	
-	@NotEmpty
-	@Length(min=5, max=100, message="O tamanho deve ser entre 5 e 80")
 	private String nome;
 	private String matricula;
-	
-	@NotEmpty(message="Campo de preenchimento obrigatório!")
-	@Email(message="Email inválido!")
 	private String email;
+	private String cpf;
 	
 	public AlunoDTO() {}
 
@@ -31,6 +21,7 @@ public class AlunoDTO {
 		this.nome = obj.getNome();
 		this.matricula = obj.getMatricula();
 		this.email = obj.getEmail();
+		this.cpf = obj.getCpf();
 	}
 
 	public void setId(Integer id) {
@@ -61,4 +52,12 @@ public class AlunoDTO {
 		this.email = email;
 	}
 
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	
 }
