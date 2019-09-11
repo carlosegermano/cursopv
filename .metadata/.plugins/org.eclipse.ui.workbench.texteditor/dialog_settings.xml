@@ -6,15 +6,17 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Simulado"/>
+		<item key="selection" value="Desempenho"/>
 		<list key="findhistory">
 			<item value="Professor"/>
+			<item value="D"/>
 			<item value="Aluno"/>
 			<item value="Endereco"/>
 			<item value="&#x09;private EnderecoRepository repo;"/>
 			<item value="AlunoRepository"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Desempenho"/>
 			<item value="Simulado"/>
 			<item value="Professor"/>
 			<item value="DisciplinaRepository"/>

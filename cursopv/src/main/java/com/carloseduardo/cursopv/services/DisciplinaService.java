@@ -1,5 +1,6 @@
 package com.carloseduardo.cursopv.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,5 +20,9 @@ public class DisciplinaService {
 		Optional<Disciplina> obj = repo.findById(id);
 		return obj.orElseThrow(() -> new ObjectNotFoundException(
 				"Objeto não encontrado! Id: " + id + ", Tipo: " + Disciplina.class.getName()));
+	}
+	
+	public List<Disciplina> findAll(){
+		return repo.findAll();
 	}
 }
