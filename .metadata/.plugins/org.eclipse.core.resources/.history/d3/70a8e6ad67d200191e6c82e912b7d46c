@@ -1,8 +1,0 @@
-package com.carloseduardo.cursopv.resources.exception;
-
-import org.springframework.web.bind.annotation.ControllerAdvice;
-
-@ControllerAdvice
-public class ResourceExceptionHandler {
-
-}

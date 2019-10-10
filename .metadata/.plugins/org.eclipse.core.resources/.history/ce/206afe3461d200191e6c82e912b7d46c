@@ -1,5 +1,0 @@
-package com.carloseduardo.cursopv.resources.exceptions;
-
-public class ObjectNotFoundException {
-
-}
