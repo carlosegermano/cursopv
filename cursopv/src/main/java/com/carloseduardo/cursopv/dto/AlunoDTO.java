@@ -11,7 +11,7 @@ public class AlunoDTO {
 
 	private Integer id;
 	
-	@NotEmpty
+	@NotEmpty(message="Preenchimento obrigatório!")
 	@Length(min=5, max=100, message="O tamanho deve ser entre 5 e 80")
 	private String nome;
 	private String matricula;

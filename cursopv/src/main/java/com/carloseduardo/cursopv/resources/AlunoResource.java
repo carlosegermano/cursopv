@@ -34,6 +34,15 @@ public class AlunoResource {
 		return ResponseEntity.ok().body(obj);
 		
 	}
+
+	@RequestMapping(method=RequestMethod.POST)
+	public ResponseEntity<Void> insert(@Valid @RequestBody AlunoDTO objDto){
+		Aluno obj = service.fromDTO(objDto);
+		obj = service.insert(obj);
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
+				.path("/{id}").buildAndExpand(obj.getId()).toUri();
+		return ResponseEntity.created(uri).build();
+	}
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.PUT)
 	public ResponseEntity<Void> update(@Valid @RequestBody AlunoDTO objDto, @PathVariable Integer id){
@@ -57,14 +66,6 @@ public class AlunoResource {
 		
 	}
 
-	@RequestMapping(method=RequestMethod.POST)
-	public ResponseEntity<Void> insert(@RequestBody Aluno obj){
-		obj = service.insert(obj);
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
-				.path("/{id}").buildAndExpand(obj.getId()).toUri();
-		return ResponseEntity.created(uri).build();
-	}
-	
 	@RequestMapping(value="/page", method=RequestMethod.GET)
 	public ResponseEntity<Page<AlunoDTO>> findPage(
 			@RequestParam(value="page", defaultValue="0") Integer page, 
