@@ -16,7 +16,7 @@ public class DisciplinaService {
 	@Autowired
 	private DisciplinaRepository repo;
 	
-	public Disciplina buscar(Integer id) {
+	public Disciplina find(Integer id) {
 		Optional<Disciplina> obj = repo.findById(id);
 		return obj.orElseThrow(() -> new ObjectNotFoundException(
 				"Objeto não encontrado! Id: " + id + ", Tipo: " + Disciplina.class.getName()));

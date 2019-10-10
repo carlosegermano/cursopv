@@ -23,7 +23,7 @@ public class DisciplinaResource {
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public ResponseEntity<?> find(@PathVariable Integer id) {
 		
-		Disciplina obj = service.buscar(id);
+		Disciplina obj = service.find(id);
 		return ResponseEntity.ok().body(obj);
 		
 	}
