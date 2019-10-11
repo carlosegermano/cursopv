@@ -19,6 +19,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.carloseduardo.cursopv.domain.Aluno;
 import com.carloseduardo.cursopv.dto.AlunoDTO;
+import com.carloseduardo.cursopv.dto.AlunoNewDTO;
 import com.carloseduardo.cursopv.services.AlunoService;
 
 @RestController
@@ -36,7 +37,7 @@ public class AlunoResource {
 	}
 
 	@RequestMapping(method=RequestMethod.POST)
-	public ResponseEntity<Void> insert(@Valid @RequestBody AlunoDTO objDto){
+	public ResponseEntity<Void> insert(@Valid @RequestBody AlunoNewDTO objDto){
 		Aluno obj = service.fromDTO(objDto);
 		obj = service.insert(obj);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()

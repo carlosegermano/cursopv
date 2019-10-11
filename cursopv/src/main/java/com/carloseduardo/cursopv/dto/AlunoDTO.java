@@ -12,9 +12,8 @@ public class AlunoDTO {
 	private Integer id;
 	
 	@NotEmpty(message="Preenchimento obrigatório!")
-	@Length(min=5, max=100, message="O tamanho deve ser entre 5 e 80")
+	@Length(min=5, max=100, message="O tamanho deve ser entre 5 e 100")
 	private String nome;
-	private String matricula;
 	
 	@NotEmpty(message="Campo de preenchimento obrigatório!")
 	@Email(message="Email inválido!")
@@ -29,7 +28,6 @@ public class AlunoDTO {
 	public AlunoDTO(Aluno obj) {
 		this.id = obj.getId();
 		this.nome = obj.getNome();
-		this.matricula = obj.getMatricula();
 		this.email = obj.getEmail();
 	}
 
@@ -43,14 +41,6 @@ public class AlunoDTO {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getMatricula() {
-		return matricula;
-	}
-
-	public void setMatricula(String matricula) {
-		this.matricula = matricula;
 	}
 
 	public String getEmail() {
