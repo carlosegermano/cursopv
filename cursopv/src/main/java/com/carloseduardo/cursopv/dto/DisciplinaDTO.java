@@ -1,12 +1,15 @@
 package com.carloseduardo.cursopv.dto;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.Length;
 
 import com.carloseduardo.cursopv.domain.Disciplina;
 
-public class DisciplinaDTO {
+public class DisciplinaDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
 
 	private Integer id;
 	
