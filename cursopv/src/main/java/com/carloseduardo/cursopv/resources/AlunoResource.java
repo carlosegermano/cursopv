@@ -47,7 +47,7 @@ public class AlunoResource {
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.PUT)
 	public ResponseEntity<Void> update(@Valid @RequestBody AlunoDTO objDto, @PathVariable Integer id){
-		Aluno obj = service.fromDTO(objDto);
+		Aluno obj = service.fromDTO(objDto);	
 		obj.setId(id);
 		obj = service.update(obj);
 		return ResponseEntity.noContent().build();

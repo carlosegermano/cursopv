@@ -1,0 +1,69 @@
+package com.carloseduardo.cursopv.services;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.carloseduardo.cursopv.domain.Aluno;
+import com.carloseduardo.cursopv.domain.Desempenho;
+import com.carloseduardo.cursopv.repositories.AlunoRepository;
+import com.carloseduardo.cursopv.repositories.DesempenhoRepository;
+import com.carloseduardo.cursopv.resources.AlunoResource;
+import com.carloseduardo.cursopv.services.exception.ObjectNotFoundException;
+
+public class DesempenhoService {
+
+	@Autowired
+	DesempenhoRepository desempenhoRepository;
+	
+	@Autowired
+	private AlunoRepository alunoRepository;
+	
+	public Desempenho find(Integer id) {
+		Optional<Desempenho> obj = desempenhoRepository.findById(id);
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! Id: " + id + ", Tipo: " + Desempenho.class.getName()));
+	}
+
+	@Transactional
+	public Desempenho insert(Desempenho obj, Integer idAluno) {
+		obj.setId(null);
+		obj = desempenhoRepository.save(obj);
+		return obj;
+	}
+	
+	public Desempenho update(Desempenho obj) {
+		Desempenho newObj = find(obj.getId());
+		updateDate(newObj, obj);
+		return desempenhoRepository.save(newObj);
+	}
+	
+	public void delete(Integer id) {
+		find(id);
+		try {
+			desempenhoRepository.deleteById(id);
+		} catch (DataIntegrityViolationException e) {
+			throw new DataIntegrityViolationException("Não é possível excluir aluno sem excluir o endereço e seus telefones");
+		}
+	}
+	
+	private void updateDate(Desempenho newObj, Desempenho obj) {
+		newObj.setLinguaPortuguesa(obj.getLinguaPortuguesa());
+		newObj.setMatematica(obj.getMatematica());
+		newObj.setHistoria(obj.getHistoria());
+		newObj.setGeografia(obj.getGeografia());
+		newObj.setFisica(obj.getFisica());
+		newObj.setQuimica(obj.getQuimica());
+		newObj.setBiologia(obj.getBiologia());
+		newObj.setSociologia(obj.getSociologia()); 
+		newObj.setFilosofia(obj.getFilosofia());
+		newObj.setLinguaEspanhola(obj.getLinguaEspanhola());
+		newObj.setMediaGeral(obj.getMediaGeral());
+	}
+	
+	Desempenho desempenho = new Desempenho(null, objDto.getLinguaPortuguesa(), objDto.getMatematica(), objDto.getHistoria(), 
+			objDto.getGeografia(), objDto.getFisica(), objDto.getQuimica(), objDto.getBiologia(), objDto.getSociologia(), 
+			objDto.getFilosofia(), objDto.getLinguaEspanhola(), objDto.getMediaGeral(), aluno);
+}

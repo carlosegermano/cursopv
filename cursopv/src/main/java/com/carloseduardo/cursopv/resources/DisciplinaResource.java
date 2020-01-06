@@ -29,11 +29,9 @@ public class DisciplinaResource {
 	private DisciplinaService service;
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
-	public ResponseEntity<?> find(@PathVariable Integer id) {
-		
+	public ResponseEntity<?> find(@PathVariable Integer id) {		
 		Disciplina obj = service.find(id);
 		return ResponseEntity.ok().body(obj);
-		
 	}
 
 	@RequestMapping(method=RequestMethod.POST)

@@ -35,6 +35,14 @@ public class DisciplinaService {
 	public List<Disciplina> findAll(){
 		return repo.findAll();
 	}
+
+	@Transactional
+	public Disciplina insert(Disciplina obj) {
+		obj.setId(null);
+		obj = repo.save(obj);
+		professorRepository.save(obj.getProfessor());
+		return obj;
+	}
 	
 	public Disciplina update(Disciplina obj) {
 		Disciplina newObj = find(obj.getId());
@@ -65,11 +73,4 @@ public class DisciplinaService {
 		return repo.findAll(pageRequest);
 	}
 
-	@Transactional
-	public Disciplina insert(Disciplina obj) {
-		obj.setId(null);
-		obj = repo.save(obj);
-		professorRepository.save(obj.getProfessor());
-		return obj;
-	}
 }

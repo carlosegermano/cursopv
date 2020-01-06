@@ -1,5 +1,7 @@
 package com.carloseduardo.cursopv.dto;
 
+import com.carloseduardo.cursopv.domain.Desempenho;
+
 public class AlunoNewDTO {
 
 	private String nome;
@@ -18,6 +20,8 @@ public class AlunoNewDTO {
 	private String nomeProfessor;
 	private String titulacao;
 	private String cpfProfessor;
+	
+	private Desempenho desempenho;
 	
 	private String telefone1;
 	private String telefone2;
@@ -149,6 +153,14 @@ public class AlunoNewDTO {
 		this.cpfProfessor = cpfProfessor;
 	}
 
+	public Desempenho getDesempenho() {
+		return desempenho;
+	}
+
+	public void setDesempenho(Desempenho desempenho) {
+		this.desempenho = desempenho;
+	}
+
 	public String getTelefone1() {
 		return telefone1;
 	}
@@ -252,4 +264,5 @@ public class AlunoNewDTO {
 	public void setMediaGeral(double mediaGeral) {
 		this.mediaGeral = mediaGeral;
 	}
+	
 }

@@ -6,7 +6,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Disciplina"/>
+		<item key="selection" value="Desempenho"/>
 		<list key="findhistory">
 			<item value="Aluno"/>
 			<item value="AlunoDTO"/>
@@ -18,9 +18,9 @@
 			<item value="AlunoRepository"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Desempenho"/>
 			<item value="Disciplina"/>
 			<item value="DisciplinaDTO"/>
-			<item value="Desempenho"/>
 			<item value="Simulado"/>
 			<item value="Professor"/>
 			<item value="DisciplinaRepository"/>

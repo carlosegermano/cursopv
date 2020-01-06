@@ -16,7 +16,7 @@ public class Desempenho implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private double linguaPortuguesa;
 	private double matematica;
@@ -29,14 +29,15 @@ public class Desempenho implements Serializable {
 	private double filosofia;
 	private double linguaEspanhola;
 	private double mediaGeral;
-	
+
 	@JsonIgnore
 	@OneToOne
 	@JoinColumn(name="aluno_id")
 	private Aluno aluno;
-
-	public Desempenho() {}
 	
+	public Desempenho() {
+	}
+
 	public Desempenho(Integer id, double linguaPortuguesa, double matematica, double historia, double geografia,
 			double fisica, double quimica, double biologia, double sociologia, double filosofia, double linguaEspanhola,
 			double mediaGeral, Aluno aluno) {
@@ -158,31 +159,6 @@ public class Desempenho implements Serializable {
 
 	public void setAluno(Aluno aluno) {
 		this.aluno = aluno;
-	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Desempenho other = (Desempenho) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
-		return true;
 	}
 	
 }

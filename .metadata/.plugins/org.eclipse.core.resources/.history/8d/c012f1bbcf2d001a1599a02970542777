@@ -1,0 +1,49 @@
+package com.carloseduardo.cursopv.services;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.carloseduardo.cursopv.domain.Desempenho;
+import com.carloseduardo.cursopv.repositories.DesempenhoRepository;
+import com.carloseduardo.cursopv.services.exception.ObjectNotFoundException;
+
+public class DesempenhoService {
+
+	@Autowired
+	DesempenhoRepository desempenhoRepository;
+	
+	public Desempenho find(Integer id) {
+		Optional<Desempenho> obj = desempenhoRepository.findById(id);
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! Id: " + id + ", Tipo: " + Desempenho.class.getName()));
+	}
+
+	@Transactional
+	public Desempenho insert(Desempenho obj) {
+		obj.setId(null);
+		obj = desempenhoRepository.save(obj);
+		return obj;
+	}
+	
+	public Desempenho update(Desempenho obj) {
+		Desempenho newObj = find(obj.getId());
+		updateDate(newObj, obj);
+		return desempenhoRepository.save(newObj);
+	}
+	
+	public void delete(Integer id) {
+		find(id);
+		try {
+			desempenhoRepository.deleteById(id);
+		} catch (DataIntegrityViolationException e) {
+			throw new DataIntegrityViolationException("Não é possível excluir aluno sem excluir o endereço e seus telefones");
+		}
+	}
+	
+	Desempenho desempenho = new Desempenho(null, objDto.getLinguaPortuguesa(), objDto.getMatematica(), objDto.getHistoria(), 
+			objDto.getGeografia(), objDto.getFisica(), objDto.getQuimica(), objDto.getBiologia(), objDto.getSociologia(), 
+			objDto.getFilosofia(), objDto.getLinguaEspanhola(), objDto.getMediaGeral(), aluno);
+}

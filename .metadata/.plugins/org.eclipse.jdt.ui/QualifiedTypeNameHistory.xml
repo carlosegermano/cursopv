@@ -41,10 +41,8 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.services.exception.DataIntegrityException"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.MethodArgumentNotValidException"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Aluno"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Endereco"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Disciplina"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Desempenho"/>
     <fullyQualifiedTypeName name="javax.persistence.Column"/>
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -55,4 +53,9 @@
     <fullyQualifiedTypeName name="org.springframework.data.repository.RepositoryDefinition"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.repositories.ProfessorRepository"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Professor"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.resources.AlunoResource"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Aluno"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.dto.DesempenhoNewDTO"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Desempenho"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.dto.DesempenhoDTO"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,140 @@
+package com.carloseduardo.cursopv.domain;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Desempenho implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	
+	private Integer id;
+	private String linguaPortuguesa;
+	private String matematica;
+	private String historia;
+	private String geografia;
+	private String fisica;
+	private String quimica;
+	private String biologia;
+	private String sociologia;
+	private String filosofia;
+	private String linguaEspanhola;
+	private String mediaGeral;
+	
+	public Desempenho() {}
+
+	public Desempenho(Integer id, String linguaPortuguesa, String matematica, String historia, String geografia,
+			String fisica, String quimica, String biologia, String sociologia, String filosofia, String linguaEspanhola,
+			String mediaGeral) {
+		super();
+		this.id = id;
+		this.linguaPortuguesa = linguaPortuguesa;
+		this.matematica = matematica;
+		this.historia = historia;
+		this.geografia = geografia;
+		this.fisica = fisica;
+		this.quimica = quimica;
+		this.biologia = biologia;
+		this.sociologia = sociologia;
+		this.filosofia = filosofia;
+		this.linguaEspanhola = linguaEspanhola;
+		this.mediaGeral = mediaGeral;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getLinguaPortuguesa() {
+		return linguaPortuguesa;
+	}
+
+	public void setLinguaPortuguesa(String linguaPortuguesa) {
+		this.linguaPortuguesa = linguaPortuguesa;
+	}
+
+	public String getMatematica() {
+		return matematica;
+	}
+
+	public void setMatematica(String matematica) {
+		this.matematica = matematica;
+	}
+
+	public String getHistoria() {
+		return historia;
+	}
+
+	public void setHistoria(String historia) {
+		this.historia = historia;
+	}
+
+	public String getGeografia() {
+		return geografia;
+	}
+
+	public void setGeografia(String geografia) {
+		this.geografia = geografia;
+	}
+
+	public String getFisica() {
+		return fisica;
+	}
+
+	public void setFisica(String fisica) {
+		this.fisica = fisica;
+	}
+
+	public String getQuimica() {
+		return quimica;
+	}
+
+	public void setQuimica(String quimica) {
+		this.quimica = quimica;
+	}
+
+	public String getBiologia() {
+		return biologia;
+	}
+
+	public void setBiologia(String biologia) {
+		this.biologia = biologia;
+	}
+
+	public String getSociologia() {
+		return sociologia;
+	}
+
+	public void setSociologia(String sociologia) {
+		this.sociologia = sociologia;
+	}
+
+	public String getFilosofia() {
+		return filosofia;
+	}
+
+	public void setFilosofia(String filosofia) {
+		this.filosofia = filosofia;
+	}
+
+	public String getLinguaEspanhola() {
+		return linguaEspanhola;
+	}
+
+	public void setLinguaEspanhola(String linguaEspanhola) {
+		this.linguaEspanhola = linguaEspanhola;
+	}
+
+	public String getMediaGeral() {
+		return mediaGeral;
+	}
+
+	public void setMediaGeral(String mediaGeral) {
+		this.mediaGeral = mediaGeral;
+	}
+}

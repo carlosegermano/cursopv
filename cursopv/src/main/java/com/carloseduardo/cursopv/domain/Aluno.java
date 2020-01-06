@@ -29,7 +29,7 @@ public class Aluno implements Serializable {
 	private String email;
 	private String cpf;
 	
-	@OneToMany(mappedBy="aluno")
+	@OneToMany(mappedBy="aluno", cascade=CascadeType.ALL)
 	private List<Endereco> enderecos = new ArrayList<>();
 
 	@ManyToMany(mappedBy="alunos")
@@ -38,7 +38,7 @@ public class Aluno implements Serializable {
 	@ElementCollection
 	@CollectionTable(name="TELEFONE")
 	private Set<String> telefones = new HashSet<>();
-
+	
 	@OneToOne(cascade=CascadeType.ALL, mappedBy="aluno")
 	private Desempenho desempenho;
 	
@@ -116,7 +116,7 @@ public class Aluno implements Serializable {
 	public void setDisciplinas(List<Disciplina> disciplinas) {
 		this.disciplinas = disciplinas;
 	}
-
+	
 	public Desempenho getDesempenho() {
 		return desempenho;
 	}

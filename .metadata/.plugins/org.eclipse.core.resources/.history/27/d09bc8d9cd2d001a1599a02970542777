@@ -1,0 +1,16 @@
+package com.carloseduardo.cursopv.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.carloseduardo.cursopv.domain.Desempenho;
+import com.carloseduardo.cursopv.repositories.DesempenhoRepository;
+
+public class DesempenhoService {
+
+	@Autowired
+	DesempenhoRepository desempenhoRepository;
+	
+	Desempenho desempenho = new Desempenho(null, objDto.getLinguaPortuguesa(), objDto.getMatematica(), objDto.getHistoria(), 
+			objDto.getGeografia(), objDto.getFisica(), objDto.getQuimica(), objDto.getBiologia(), objDto.getSociologia(), 
+			objDto.getFilosofia(), objDto.getLinguaEspanhola(), objDto.getMediaGeral(), aluno);
+}

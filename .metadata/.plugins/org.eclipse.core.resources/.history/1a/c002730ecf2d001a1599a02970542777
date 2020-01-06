@@ -1,0 +1,5 @@
+package com.carloseduardo.cursopv.dto;
+
+public class DesempenhoNewDTO {
+
+}

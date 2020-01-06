@@ -8,5 +8,4 @@ import com.carloseduardo.cursopv.domain.Desempenho;
 @Repository
 public interface DesempenhoRepository extends JpaRepository<Desempenho, Integer> {
 
-	
 }
