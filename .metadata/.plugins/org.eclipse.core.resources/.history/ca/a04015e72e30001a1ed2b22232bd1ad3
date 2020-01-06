@@ -9,6 +9,6 @@ import com.carloseduardo.cursopv.domain.Aluno;
 @Repository
 public interface AlunoRepository extends JpaRepository<Aluno, Integer> {
 
-	@Transactional(readOnly=true)
+	@Transactional
 	Aluno findByEmail(String email);
 }

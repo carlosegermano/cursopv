@@ -1,9 +1,7 @@
 package com.carloseduardo.cursopv.dto;
 
 import com.carloseduardo.cursopv.domain.Desempenho;
-import com.carloseduardo.cursopv.services.validation.AlunoInsert;
 
-@AlunoInsert
 public class AlunoNewDTO {
 
 	private String nome;

@@ -1,0 +1,9 @@
+package com.carloseduardo.cursopv.services.validation;
+
+import javax.validation.ConstraintValidator;
+
+import com.carloseduardo.cursopv.dto.AlunoNewDTO;
+
+public class AlunoInsertValidator implements ConstraintValidator<AlunoInsert, AlunoNewDTO> {
+
+}
