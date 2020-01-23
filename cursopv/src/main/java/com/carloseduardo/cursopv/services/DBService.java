@@ -6,12 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.carloseduardo.cursopv.domain.Aluno;
-import com.carloseduardo.cursopv.domain.Desempenho;
 import com.carloseduardo.cursopv.domain.Disciplina;
 import com.carloseduardo.cursopv.domain.Endereco;
 import com.carloseduardo.cursopv.domain.Professor;
 import com.carloseduardo.cursopv.repositories.AlunoRepository;
-import com.carloseduardo.cursopv.repositories.DesempenhoRepository;
 import com.carloseduardo.cursopv.repositories.DisciplinaRepository;
 import com.carloseduardo.cursopv.repositories.EnderecoRepository;
 import com.carloseduardo.cursopv.repositories.ProfessorRepository;
@@ -30,10 +28,7 @@ public class DBService {
 	
 	@Autowired
 	private ProfessorRepository professorRepository;
-	
-	@Autowired
-	private DesempenhoRepository desempenhoRepository;
-	
+
 	public void instantiateDatabase() {
 
 		Aluno aluno1 = new Aluno(null, "Mariana Melícia", "8985762", "marimel@gmail.com", "09898795564");
@@ -72,9 +67,5 @@ public class DBService {
 		Professor prof2 = new Professor(null, "Leonardo França", "Mestre", "55458569856", disc2);
 
 		professorRepository.saveAll(Arrays.asList(prof1, prof2));
-
-		Desempenho d1 = new Desempenho(null, 9.4, 7.8, 8.0, 10.0, 10.0, 9.5, 7.7, 8.5, 6.5, 10.0, 8.74, aluno1);
-
-		desempenhoRepository.saveAll(Arrays.asList(d1));
 	}
 }

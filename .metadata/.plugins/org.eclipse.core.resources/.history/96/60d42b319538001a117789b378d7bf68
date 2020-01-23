@@ -1,0 +1,28 @@
+package com.carloseduardo.cursopv.resources;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.carloseduardo.cursopv.domain.Desempenho;
+import com.carloseduardo.cursopv.repositories.AlunoRepository;
+import com.carloseduardo.cursopv.services.DesempenhoService;
+
+@RestController
+@RequestMapping(value="/desempenho")
+public class DesempenhoResource {
+
+	@Autowired
+	private DesempenhoService service;
+	
+	@Autowired
+	private AlunoRepository alunoRepository;
+	
+	@RequestMapping(method=RequestMethod.GET)
+	public ResponseEntity<Desempenho> find(String nome, Integer id) {
+		Desempenho obj = service.search(nome, alunoRepository.getOne(id).getId());
+		return ResponseEntity.ok().body(obj);
+	}
+}

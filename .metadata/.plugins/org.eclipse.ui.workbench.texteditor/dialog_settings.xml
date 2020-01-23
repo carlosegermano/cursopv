@@ -8,9 +8,10 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="Desempenho"/>
 		<list key="findhistory">
+			<item value="Disciplina"/>
+			<item value="String"/>
 			<item value="Aluno"/>
 			<item value="AlunoDTO"/>
-			<item value="Disciplina"/>
 			<item value="Professor"/>
 			<item value="D"/>
 			<item value="Endereco"/>
@@ -19,6 +20,7 @@
 		</list>
 		<list key="replacehistory">
 			<item value="Desempenho"/>
+			<item value="double"/>
 			<item value="Disciplina"/>
 			<item value="DisciplinaDTO"/>
 			<item value="Simulado"/>

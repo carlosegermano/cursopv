@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.awt.List"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.repositories.AlunoRepository"/>
-    <fullyQualifiedTypeName name="java.util.Optional"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.resources.exceptions.ObjectNotFoundException"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.services.exceptions.ObjectNotFoundException"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.services.exception.ObjectNotFoundException"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.resources.exception.StandardError"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -22,11 +13,6 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="javax.persistence.Id"/>
-    <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
-    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
     <fullyQualifiedTypeName name="java.net.URI"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.support.ServletUriComponentsBuilder"/>
@@ -38,16 +24,12 @@
     <fullyQualifiedTypeName name="javax.validation.constraints.Email"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.PageRequest"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Sort.Direction"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.services.exception.DataIntegrityException"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.MethodArgumentNotValidException"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Endereco"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Disciplina"/>
     <fullyQualifiedTypeName name="javax.persistence.Column"/>
-    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.validation.ConstraintValidatorContext"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.resources.exception.FieldMessage"/>
     <fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotEmpty"/>
     <fullyQualifiedTypeName name="javax.validation.constraints.NotEmpty"/>
     <fullyQualifiedTypeName name="org.springframework.data.repository.RepositoryDefinition"/>
@@ -56,6 +38,26 @@
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.resources.AlunoResource"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Aluno"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.dto.DesempenhoNewDTO"/>
-    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Desempenho"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.ElementType"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Target"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.RetentionPolicy"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.resources.exception.FieldMessage"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.HandlerMapping"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.repositories.DesempenhoRepository"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.repositories.AlunoRepository"/>
     <fullyQualifiedTypeName name="com.carloseduardo.cursopv.dto.DesempenhoDTO"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.carloseduardo.cursopv.domain.Desempenho"/>
+    <fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 </qualifiedTypeNameHistroy>

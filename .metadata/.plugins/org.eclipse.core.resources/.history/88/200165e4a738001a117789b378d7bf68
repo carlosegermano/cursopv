@@ -1,0 +1,33 @@
+package com.carloseduardo.cursopv.services;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.carloseduardo.cursopv.domain.Aluno;
+import com.carloseduardo.cursopv.domain.Desempenho;
+import com.carloseduardo.cursopv.repositories.AlunoRepository;
+import com.carloseduardo.cursopv.repositories.DesempenhoRepository;
+import com.carloseduardo.cursopv.services.exception.ObjectNotFoundException;
+
+@Service
+public class DesempenhoService {
+
+	@Autowired
+	private DesempenhoRepository desempenhoRepository;
+	
+	@Autowired
+	private AlunoRepository alunoRepository;
+	
+	public Desempenho find(Integer id) {
+		Optional<Desempenho> obj = desempenhoRepository.findById(id);
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! Id: " + id + ", Tipo: " + Desempenho.class.getName()));
+	}
+	
+	public Desempenho search(String nome) {
+		Aluno aluno = alunoRepository.search(nome);
+		return desempenhoRepository.search(aluno).getAluno().getDesempenho();
+	}
+}

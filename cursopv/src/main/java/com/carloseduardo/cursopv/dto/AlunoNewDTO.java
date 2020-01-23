@@ -1,6 +1,5 @@
 package com.carloseduardo.cursopv.dto;
 
-import com.carloseduardo.cursopv.domain.Desempenho;
 import com.carloseduardo.cursopv.services.validation.AlunoInsert;
 
 @AlunoInsert
@@ -23,23 +22,9 @@ public class AlunoNewDTO {
 	private String titulacao;
 	private String cpfProfessor;
 	
-	private Desempenho desempenho;
-	
 	private String telefone1;
 	private String telefone2;
 	private String telefone3;
-	
-	private double linguaPortuguesa;
-	private double matematica;
-	private double historia;
-	private double geografia;
-	private double fisica;
-	private double quimica;
-	private double biologia;
-	private double sociologia;
-	private double filosofia;
-	private double linguaEspanhola;
-	private double mediaGeral;
 	
 	public String getTelefone3() {
 		return telefone3;
@@ -154,15 +139,7 @@ public class AlunoNewDTO {
 	public void setCpfProfessor(String cpfProfessor) {
 		this.cpfProfessor = cpfProfessor;
 	}
-
-	public Desempenho getDesempenho() {
-		return desempenho;
-	}
-
-	public void setDesempenho(Desempenho desempenho) {
-		this.desempenho = desempenho;
-	}
-
+	
 	public String getTelefone1() {
 		return telefone1;
 	}
@@ -178,93 +155,4 @@ public class AlunoNewDTO {
 	public void setTelefone2(String telefone2) {
 		this.telefone2 = telefone2;
 	}
-
-	public double getLinguaPortuguesa() {
-		return linguaPortuguesa;
-	}
-
-	public void setLinguaPortuguesa(double linguaPortuguesa) {
-		this.linguaPortuguesa = linguaPortuguesa;
-	}
-
-	public double getMatematica() {
-		return matematica;
-	}
-
-	public void setMatematica(double matematica) {
-		this.matematica = matematica;
-	}
-
-	public double getHistoria() {
-		return historia;
-	}
-
-	public void setHistoria(double historia) {
-		this.historia = historia;
-	}
-
-	public double getGeografia() {
-		return geografia;
-	}
-
-	public void setGeografia(double geografia) {
-		this.geografia = geografia;
-	}
-
-	public double getFisica() {
-		return fisica;
-	}
-
-	public void setFisica(double fisica) {
-		this.fisica = fisica;
-	}
-
-	public double getQuimica() {
-		return quimica;
-	}
-
-	public void setQuimica(double quimica) {
-		this.quimica = quimica;
-	}
-
-	public double getBiologia() {
-		return biologia;
-	}
-
-	public void setBiologia(double biologia) {
-		this.biologia = biologia;
-	}
-
-	public double getSociologia() {
-		return sociologia;
-	}
-
-	public void setSociologia(double sociologia) {
-		this.sociologia = sociologia;
-	}
-
-	public double getFilosofia() {
-		return filosofia;
-	}
-
-	public void setFilosofia(double filosofia) {
-		this.filosofia = filosofia;
-	}
-
-	public double getLinguaEspanhola() {
-		return linguaEspanhola;
-	}
-
-	public void setLinguaEspanhola(double linguaEspanhola) {
-		this.linguaEspanhola = linguaEspanhola;
-	}
-
-	public double getMediaGeral() {
-		return mediaGeral;
-	}
-
-	public void setMediaGeral(double mediaGeral) {
-		this.mediaGeral = mediaGeral;
-	}
-	
 }
